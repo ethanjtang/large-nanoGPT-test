@@ -16,8 +16,8 @@ wandb_run_name = 'large-caissa'
 
 dataset = 'chess-data'
 gradient_accumulation_steps = 4
-batch_size = 128 # a single puzzle is max 81 tokens, adding for extra padding
-block_size = 128 # context of up to 256 previous characters
+batch_size = 512 # number of independent samples processed per iteration
+block_size = 128 # a single puzzle is max 81 tokens, adding for extra padding
 
 # baby GPT model :)
 # made larger
