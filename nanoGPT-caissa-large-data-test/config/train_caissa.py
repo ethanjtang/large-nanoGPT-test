@@ -1,6 +1,7 @@
 # train a miniature character-level shakespeare model
 # good for debugging and playing on macbooks and such
 
+init_from = 'scratch'
 out_dir = 'output'
 eval_interval = 2000
 eval_iters = 200
