@@ -51,7 +51,7 @@ else
 
     # Train LLM
     echo "Training LLM on data"
-    python train.py config/train_caissa.py
+    python -u train.py config/train_caissa.py
     echo "Done training LLM on data"
 fi
 
