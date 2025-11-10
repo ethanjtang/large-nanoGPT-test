@@ -5,7 +5,7 @@ init_from = 'scratch'
 out_dir = 'output'
 eval_interval = 2000
 eval_iters = 200
-log_interval = 10 # don't print too too often
+log_interval = 1 # don't print too too often
 
 # we expect to overfit on this small dataset, so only save when val improves
 always_save_checkpoint = False
