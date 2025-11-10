@@ -8,7 +8,7 @@ eval_iters = 200
 log_interval = 10 # don't print too too often
 
 # we expect to overfit on this small dataset, so only save when val improves
-always_save_checkpoint = True
+always_save_checkpoint = False
 
 wandb_log = False # override via command line if you like
 wandb_project = 'lichess-puzzle-positions-large-sample'
