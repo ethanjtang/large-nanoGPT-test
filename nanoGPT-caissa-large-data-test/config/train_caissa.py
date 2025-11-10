@@ -3,7 +3,7 @@
 
 init_from = 'scratch'
 out_dir = 'output'
-eval_interval = 2000
+eval_interval = 1000
 eval_iters = 200
 log_interval = 100 # don't print too too often
 
@@ -17,18 +17,18 @@ wandb_run_name = 'large-caissa'
 dataset = 'chess-data'
 gradient_accumulation_steps = 4
 batch_size = 128 # a single puzzle is max 81 tokens, adding for extra padding
-block_size = 256 # context of up to 256 previous characters
+block_size = 128 # context of up to 256 previous characters
 
 # baby GPT model :)
 # made larger
 n_layer = 8
 n_head = 8
 n_embd = 512
-dropout = 0.1
+dropout = 0.05
 
 learning_rate = 6e-4 # with baby networks can afford to go a bit higher
-max_iters = 1e5
-lr_decay_iters = 1e5 # make equal to max_iters usually
+max_iters = 10000 # NEED TO TEST THIS
+lr_decay_iters = 100000 # make equal to max_iters usually
 min_lr = 6e-5 # learning_rate / 10 usually
 beta2 = 0.99 # make a bit bigger because number of tokens per iter is small
 
